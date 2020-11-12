@@ -28,13 +28,13 @@ html(lang="ru-RU" class="no-js")
 		link(rel="apple-touch-icon" sizes="167x167" href="../img/favicons/apple-touch-icon-167x167.png")
 		link(rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-touch-icon-180x180.png")
 		link(rel="apple-touch-icon" sizes="1024x1024" href="../img/favicons/apple-touch-icon-1024x1024.png")
-		link(rel="stylesheet" href="../styles/main.css")
 
 	body
+		link(rel="stylesheet" href="https://static.faberlic.com/resets/x_reset.css")
+		link(rel="stylesheet" href="https://static.faberlic.com/resets/dino-reset.css")
+		link(rel="stylesheet" href="../styles/style.fab.css")
+		link(rel="stylesheet" href="../styles/main.css")
 		.wrapper
-			include ../../blocks/modules/header/header
-			main.main
-				block content
-			include ../../blocks/modules/footer/footer
+			block content
 
 		block scripts
