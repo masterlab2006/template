@@ -1,0 +1,20 @@
+*,
+*::after,
+*::before
+    box-sizing border-box
+
+body
+    -moz-osx-font-smoothing grayscale
+    -webkit-font-smoothing antialiased
+
+h1, h2, h3, h4, h5, h6, ul
+    margin 0
+    padding 0
+
+.container
+    container()
+    sm(max-width, rem(540))
+    md(max-width, rem(720))
+    lg(max-width, rem(960))
+    xl(max-width, rem(1140))
+    xxl(max-width, rem(1340))
