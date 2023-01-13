@@ -1,0 +1,85 @@
+.dm-villas-list
+    padding 0 em(30) em(80)
+
+    @media screen and (min-width: 769px)
+        padding 0
+        max-width: em(1336)
+        margin 0 auto em(80)
+    
+    &__header
+        font-size: em(40)
+        color: #000000;
+        text-align center
+        margin-bottom 1em
+
+    &__text
+        margin-bottom em(40)
+
+        p
+            color #000
+            font-size em(24)
+            margin-bottom 1em
+            text-align center
+            font-weight normal
+
+            @media screen and (min-width: 769px)
+                font-size em(20)
+
+            &:last-child
+                margin-bottom 0
+
+    &__items
+
+        @media screen and (min-width: 769px)
+            display flex
+            flex-wrap: wrap
+            margin 0 em(-14)
+
+    &__item
+        margin-bottom em(24)
+
+        @media screen and (min-width: 769px)
+            margin 0 em(12) em(24)
+            min-width em(430)
+            max-width em(430)
+
+    &__img-wrap
+        margin-bottom 1em
+
+    &__img
+        display block
+        object-fit: cover
+        max-width: 100%
+        height auto
+
+    &__title
+        font-size em(24)
+        // line-height (28/24em)
+        color: #000
+        margin-bottom (8/24em)
+        text-transform uppercase
+
+        @media screen and (min-width: 769px)
+            font-size em(20)
+            margin-bottom (8/20em)
+
+    &__params
+        display flex
+        justify-content: space-between
+        margin-bottom 1em
+    
+    &__param
+        font-size: em(20)
+        color: #555555;
+        font-weight normal
+
+        @media screen and (min-width: 769px)
+            font-size 1em
+
+    &__btn
+        min-width: (200/24em)
+        padding: (16/24em) 0.5em
+
+        @media screen and (min-width: 769px)
+            font-size em(20)!important
+            min-width: (176/20em)

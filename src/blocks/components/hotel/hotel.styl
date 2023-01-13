@@ -1,0 +1,507 @@
+.dm-hotel
+    font-size ( 100vw / 45 )
+    width 100%
+    position relative
+
+    @media screen and (min-width: 769px)
+        font-size ( 100vw / 108 )
+        display flex
+    
+    &__desc
+        background url(../img/content/coral/bg-sm.jpg) 50% 50% no-repeat
+        background-size cover
+        padding em(30)
+        color #fff
+
+        @media screen and (min-width: 769px)
+            padding em(40)
+            position relative
+            z-index 3
+            width em(684)
+            margin 0 em(168) 0 auto
+            background: linear-gradient(179.97deg, rgba(31, 31, 31, 0.44) 0.03%, rgba(0, 0, 0, 0.4) 105.62%);
+            -webkit-backdrop-filter: blur(15px);
+            backdrop-filter: blur(15px);
+            min-height: em(720)
+            display flex
+            flex-direction: column
+
+        &__location
+            font-weight: 400;
+            font-size: em(20)
+            padding 0 0 0 (22/20em)
+            background embedurl('../img/content/coral/location.svg') 0 50% no-repeat
+            background-size: (14/20em) auto
+            margin-bottom 2em
+
+            @media screen and (min-width: 769px)
+                font-size 1em
+                background-size: em(14) auto
+                margin-bottom 0
+
+        &__stars
+            display flex
+            justify-content: center
+            margin-bottom em(40)
+
+            @media screen and (min-width: 769px)
+                margin-bottom 2em
+
+        &__star
+            width em(24)
+            height em(24)
+            background embedurl('../img/content/coral/star.svg') 0 50% no-repeat
+            background-size: contain
+            margin 0 em(4)
+
+        &__title
+            font-weight: 400;
+            font-size: em(48)
+            text-align: center;
+            margin-bottom (40/48em)
+
+            @media screen and (min-width: 769px)
+                font-size em(40)
+                margin-bottom (24/40em)
+        
+        &__text
+            text-align: center;
+            padding: 0 em(20)
+            margin-bottom em(40)
+
+            @media screen and (min-width: 769px)
+                padding: 0 em(40)
+
+            p
+                font-weight: 400;
+                font-size: em(24)
+                margin-bottom 1em
+
+                @media screen and (min-width: 769px)
+                    font-size em(14)
+                    line-height (24/14em)
+
+                &:last-child
+                    margin-bottom 0
+
+        &__btn
+            display inline-flex
+            font-size: em(24)!important
+            color: #FFFFFF!important
+            align-items: center;
+            justify-content: center
+            background: linear-gradient(45.62deg, #FB7099 0%, #F0AB13 100%);
+            border-radius: 0.3em
+            font-weight 500
+            min-height: (60/24em)
+            min-width (320/24em)
+            padding: 0.5em
+
+            @media screen and (min-width: 769px)
+                font-size em(20)!important
+                min-height: (48/20em)
+                min-width (270/20em)
+                padding: 0.5em
+
+        &__trip
+            display flex
+            justify-content: center
+            align-items: center
+
+            &__img
+                width em(24)
+                height em(15)
+                background embedurl('../img/content/coral/trip.svg') 0 50% no-repeat
+                background-size: contain
+                margin-right 1em
+            
+            &__amount
+                font-weight: 500;
+                font-size: em(20)
+                color: #34E0A1;
+                margin 0 (8/20em) 0 0
+            
+            &__stars
+                display flex
+                margin 0 1em 0 0
+
+            &__star
+                width em(12)
+                height em(12)
+                margin-right em(8)
+                background embedurl('../img/content/coral/trip-icon.svg') 0 50% no-repeat
+                background-size: contain
+
+                &--half
+                    background-image embedurl('../img/content/coral/trip-half-icon.svg')
+
+                &:last-child
+                    margin-right 0
+
+            &__count
+                font-weight: 300;
+                font-size em(14)
+                margin 0 (32/14em) 0 0
+
+            &__more
+
+                a
+                    font-size: em(14)!important
+                    text-transform: uppercase;
+                    color:  #fff!important
+                    display inline-flex
+                    position relative
+                    padding: 0 (26/14em) 0 0
+
+                    &:before
+                        content ''
+                        position absolute
+                        right 0
+                        top 50%
+                        transform: translateY(-50%)
+                        background embedurl('../img/content/coral/more-arr.svg') 0 50% no-repeat
+                        background-size: contain
+                        font-size (16/14em)
+                        width em(14)
+                        height em(20)
+
+        &__row
+
+            @media screen and (min-width: 769px)
+                &:first-child
+                    margin-bottom auto
+                &:last-child
+                    margin-top auto
+
+            &--btn
+                text-align center
+                margin-bottom em(60)
+
+                @media screen and (min-width: 769px)
+                    margin-bottom 0
+            
+            &--trip
+                text-align center
+
+    &__video
+        height em(360)
+        overflow hidden
+        position relative
+
+        @media screen and (min-width: 769px)
+            position absolute
+            left 0
+            right 0
+            top 0
+            bottom 0
+            height auto
+
+        &:after
+            position absolute
+            content ''
+            left 0
+            top 0
+            right 0
+            bottom 0
+            opacity 1
+            transition: all 4s
+            background-repeat no-repeat
+            background-position 50% 50%
+            background-size cover
+            z-index 2
+
+        &[data-video="723670109"]
+            &:after
+                background-image url(../img/content/coral/hotel-1-sm.jpg)
+
+                @media screen and (min-width: 769px)
+                    background-image url(../img/content/coral/hotel-1-lg.jpg)
+
+        &[data-video="776227411"]
+            &:after
+                background-image url(../img/content/coral/hotel-2-lg.jpg)
+
+                @media screen and (min-width: 769px)
+                    background-image url(../img/content/coral/hotel-2-lg.jpg)
+
+            @media screen and (min-width: 769px)
+                iframe
+                    left 50%
+                    top 50%
+                    transform: translate3d(-50%, -50%, 0)
+
+        &[data-video="778055603"]
+            &:after
+                background-image url(../img/content/coral/hotel-3-lg.jpg)
+
+                @media screen and (min-width: 769px)
+                    background-image url(../img/content/coral/hotel-3-lg.jpg)
+
+        &[data-video="776226407"]
+            &:after
+                background-image url(../img/content/coral/hotel-4-lg.jpg)
+
+                @media screen and (min-width: 769px)
+                    background-image url(../img/content/coral/hotel-4-lg.jpg)
+
+        &[data-video="776228098"]
+            &:after
+                background-image url(../img/content/coral/hotel-5-lg.jpg)
+
+                @media screen and (min-width: 769px)
+                    background-image url(../img/content/coral/hotel-5-lg.jpg)
+        
+        &[data-video="776227754"]
+            &:after
+                background-image url(../img/content/coral/hotel-6-lg.jpg)
+
+                @media screen and (min-width: 769px)
+                    background-image url(../img/content/coral/hotel-6-lg.jpg)
+
+        &[data-video="781010856"]
+            &:after
+                background-image url(../img/content/coral/hotel-1001-lg.jpg)
+
+                @media screen and (min-width: 769px)
+                    background-image url(../img/content/coral/hotel-1001-lg.jpg)
+                    
+            @media screen and (min-width: 769px)
+                iframe
+                    left 50%
+                    top 50%
+                    transform: translate3d(-50%, -50%, 0)
+
+        &[data-video="781011105"]
+            &:after
+                background-image url(../img/content/coral/hotel-7-lg.jpg)
+
+                @media screen and (min-width: 769px)
+                    background-image url(../img/content/coral/hotel-7-lg.jpg)
+
+        &[data-video="781480600"]
+            &:after
+                background-image url(../img/content/coral/hotel-8-lg.jpg)
+
+                @media screen and (min-width: 769px)
+                    background-image url(../img/content/coral/hotel-8-lg.jpg)
+
+        &[data-novideo="1"]
+            &:after
+                background-image url(../img/content/coral/hotel-9-lg.jpg)
+
+                @media screen and (min-width: 769px)
+                    background-image url(../img/content/coral/hotel-9-lg.jpg)
+
+        
+
+        &.playback
+            &:after
+                opacity 0
+
+        iframe
+            position absolute
+            display block
+            left 50%
+            top 50%
+            width em(720)
+            height em(420)
+            transform: translate3d(-50%, -50%, 0)
+            z-index 1
+
+            @media screen and (min-width: 769px)
+                width em(1800)
+                height 61em
+                top auto
+                bottom 0
+                transform: translate3d(-50%, 0%, 0)
+
+.hotels__slider-wrap
+    // 
+.hotels__slider 
+    .swiper-slide
+        cursor: grab;
+
+.hotels__slider-logos
+
+    &__item
+        height: em(112)
+        display flex
+        align-items: center
+        justify-content: center
+        width em(134)
+        margin: 0 auto
+        position relative
+        cursor pointer
+
+        img
+            max-width: 100%
+            height auto
+
+    .swiper-slide-thumb-active
+        .hotels__slider-logos__item
+            &:after
+                content ''
+                position absolute
+                left 0
+                right 0
+                bottom 0
+                height 3px
+                background-image: linear-gradient(to right, #FC709A, #FFCC00);
+
+.hotels__slider-logos-wrap
+    padding: 0 em(60)
+    position relative
+    margin-bottom em(0)
+
+    @media screen and (min-width: 769px)
+        max-width: em(1336)
+        margin 0 auto
+        margin-bottom em(0)
+
+    .swiper-button-next2
+    .swiper-button-prev2
+        position absolute
+        cursor pointer
+        width em(16)
+        height em(32)
+        background-repeat no-repeat
+        background-position 0 0
+        background-size contain
+        top 50%
+        margin -1em 0 0 0
+
+        &.swiper-button-disabled
+            opacity 0.5
+
+        &:after
+            display none
+
+    .swiper-button-prev2
+        background-image embedurl('../img/content/coral/slider-arr.svg')
+        left em(30)
+
+        @media screen and (min-width: 769px)
+            left 0
+
+    .swiper-button-next2
+        background-image embedurl('../img/content/coral/slider-arr.svg')
+        transform: rotate(180deg)
+        right em(30)
+
+        @media screen and (min-width: 769px)
+            right 0
+
+/*dm-hotel-desc*/
+.dm-hotel-desc
+    padding: 0 em(30) em(64)
+
+    @media screen and (min-width: 769px)
+        max-width: em(1336)
+        padding: 0 0 em(60)
+        margin 0 auto
+
+    &__title
+        font-size: em(48)
+        color: #000000;
+        margin-bottom (40/48em)
+
+        @media screen and (min-width: 769px)
+            font-size em(40)
+            text-align center
+            margin-bottom 1em
+
+    &__text
+        p
+            font-size: em(24)
+            font-weight normal
+            color #000
+            margin-bottom 2em
+
+            @media screen and (min-width: 769px)
+                font-size em(20)
+                text-align center
+            
+            &:last-child
+                margin-bottom 0
+
+.dm-hotel-slider
+
+    &-wrap
+        max-width: em(1340)
+        margin 0 auto em(60)
+        position relative
+
+        .swiper-button-next3
+        .swiper-button-prev3
+            position absolute
+            cursor pointer
+            width em(52)
+            height em(52)
+            background-repeat no-repeat
+            background-position 0 0
+            background-size contain
+            top 50%
+            margin em(-26) 0 0 0
+            z-index 3
+            background-color rgba(#fff, 0.5)
+            border-radius: 50%
+            backdrop-filter: blur(2px);
+            display none
+
+            @media screen and (min-width: 769px)
+                display block
+
+            &:hover
+                background-color rgba(#fff, 0.2)
+
+            &.swiper-button-disabled
+                opacity 0.5
+
+            &:after
+                display none
+
+        .swiper-button-prev3
+            background-image embedurl('../img/content/coral/slider3-arr.svg')
+            left em(30)
+
+            @media screen and (min-width: 769px)
+                left em(94)
+
+        .swiper-button-next3
+            background-image embedurl('../img/content/coral/slider3-arr.svg')
+            transform: rotate(180deg)
+            right em(30)
+
+            @media screen and (min-width: 769px)
+                right em(94)
+
+    &__item
+        margin 0 0.5em
+        width em(470)
+        height em(265)
+
+        @media screen and (min-width: 769px)
+            width em(890)
+            height em(500)
+            margin 0 em(15)
+
+        img
+            display block
+            width em(470)
+            height em(265)
+            object-fit: cover
+            cursor grab
+
+            @media screen and (min-width: 769px)
+                width em(890)
+                height em(500)
+
+
+.dm-hotels
+    &[data-show="0"]
+        position absolute
+        left -100000px
+        width 100%
+
+        @media screen and (min-width: 769px)
+            width 100%

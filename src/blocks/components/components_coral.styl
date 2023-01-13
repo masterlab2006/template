@@ -1,0 +1,162 @@
+// стили компонентов для проекта Coral
+@import "contact/contact-coral"
+@import "share/share-coral"
+@import "intro/intro-search-coral"
+@import "btn/btn-coral"
+@import "tab/tab"
+@import "hotel/hotel"
+@import "map/map"
+@import "villas-list/villas-list"
+@import "villas-list2/villas-list2"
+@import "villas-info/villas-info"
+@import "service-more/service-more"
+@import "popup2/popup2"
+// @import "info3/info3-coral"
+// @import "decore/decore-coral"
+// @import "options/options-coral"
+
+html
+body
+    background-color #fff!important
+    .bcrumb
+        display none!important
+
+.lg-nowrap
+    @media screen and (min-width: 769px)
+        white-space: nowrap
+
+.dm-block10
+
+    padding: em(80) em(30) 0
+
+    @media screen and (min-width: 769px)
+        max-width: em(1336)
+        margin 0 auto
+        padding: em(80) 0 0 0
+
+    &__text
+        
+        p
+            font-weight normal
+            font-size em(20)
+            color #000
+
+            @media screen and (min-width: 769px)
+                text-align center
+
+            &:last-child
+                margin-bottom 0
+
+.dm-bottom__img
+    width em(660)
+    height em(421)
+    margin 0 auto em(80)
+    display block
+    border-radius: em(20)
+    background-repeat: no-repeat
+    background-position 50% 50%
+    background-size cover
+    background-image url('../img/content/coral/bottom2-sm.jpg')
+    position relative
+
+    @media screen and (min-width: 769px)
+        width em(1337)
+        background-image url('../img/content/coral/bottom2-lg.jpg')
+
+
+div.container-tabItemWrap div.container-tabItem.activeTab.sticky
+    @media screen and (min-width: 1007px)
+        max-width: 1007px
+        position absolute!important
+        position relative!important
+
+    @media screen and (min-width: 1200px)
+        max-width: 1130px
+    
+    @media screen and (min-width: 1440px)
+        max-width: 1370px
+
+div.container-tabItemWrap div.container-tabItem.sticky .flexboxTabContainer div.stickyLogoContainer
+    @media screen and (min-width: 1007px)
+        display none !important
+
+// .dm-section--contacts
+//     width 100%
+//     max-width 1007px
+//     margin-left auto
+//     margin-right auto
+
+//     @media all and (min-width: 1440px)
+//         padding-left 20px
+//         padding-right 20px
+//         max-width 1410px
+//         padding-bottom em(80)
+
+//     @media screen and (max-width: 1439px) 
+//         max-width 1130px
+//         padding-bottom em(80)
+
+//     @media screen and (max-width: 1199px) 
+//         max-width 1007px
+
+//     @media screen and (max-width: 768px)
+//         padding 0
+
+// .dm-bottom
+//     @media screen and (min-width: 769px)
+//         display flex
+//         position relative
+//         margin-top em(80)
+//         margin-bottom em(80)
+//         padding-bottom 1px
+
+//         &:before
+//             position absolute
+//             left 50%
+//             top em(10)
+//             bottom em(10)
+//             content ''
+//             width 1px
+//             background-color #000
+
+//         &__left
+//         &__right
+//             width 50%
+//             text-align center
+
+//         .dm-social-2-wrap
+//             padding 0
+//             display inline-block
+
+//         .dm-social-2--bottom
+//             padding em(8) 0 0 0
+        
+//         .dm-contant
+//             margin 0
+
+//         .dm-social-2__title__span
+//             font-size (24/42em)
+//             font-weight normal
+//             line-height (80/24em)
+
+//         .dm-social-2__title
+//             text-align left
+//             margin 0
+
+//         .dm-social-2
+//             justify-content flex-start
+
+//         .dm-social-2__item
+//             margin 0 em(56) 0 0
+
+//         .dm-section--contact
+//             display inline-block
+        
+//         .dm-contant__title
+//             text-align left
+
+//         .dm-contant__number
+//             text-align left
+        
+//         .dm-contant__note
+//             text-align left

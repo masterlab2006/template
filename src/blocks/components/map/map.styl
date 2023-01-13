@@ -1,0 +1,115 @@
+.dm-map
+
+    &__container
+        width em(660)
+        height em(416)
+        margin 0 auto
+
+        @media screen and (min-width: 769px)
+            width em(656)
+            margin 0
+
+    @media screen and (min-width: 769px)
+        max-width: em(1336)
+        margin 0 auto
+        display flex
+        position relative
+
+    &__img
+        height em(416)
+        background-repeat no-repeat
+        background-size cover
+        background-position 50% 50%
+        margin-bottom em(48)
+
+        @media screen and (min-width: 769px)
+            order 1
+            min-width: em(656)
+            max-width: em(656)
+            margin 0
+            position absolute
+            right 0
+            top 0
+            z-index 1
+
+        &--hotel
+            background-image url(../img/content/coral/map-sm.png)
+
+            @media screen and (min-width: 769px)
+                background-image url(../img/content/coral/map-lg.png)
+
+    &__villas
+        padding: 0 em(30)
+        margin-bottom em(80)
+        height em(390)
+        position relative
+        overflow-y scroll
+
+        @media screen and (min-width: 769px)
+            overflow-y scroll
+            overflow-x hidden
+            height em(416)
+            width em(800)
+            padding-right em(116)
+            min-width: em(800)
+            max-width: em(800)
+            padding 0 em(116) 0 0
+
+    ul&__villas-menu
+        padding 0!important
+        margin 0!important
+
+        ul
+            padding 0!important
+            margin 0!important
+
+        li
+            &:before
+            &:after
+                display none
+
+        > li
+            > a
+                display none
+
+    &__villa
+        display flex
+        align-items: center
+        padding em(24) 0 0
+        cursor pointer
+
+        &:hover
+        &.active
+            .dm-map__villa__img
+                border-radius: 10%
+
+        &__img-wrap
+            margin-right 2em
+            display block
+
+        &__img
+            display block
+            border-radius: 50%
+            transition: all 0.4s
+
+        &__title
+            // font-weight: 700;
+            font-size: em(24)
+            color: #000000;
+            margin-bottom 1em
+            display block
+
+        &__location
+            display block
+            font-weight: 400;
+            font-size: 1em
+            color: #777777;
+            padding 0 0 0 em(24)
+            background embedurl('../img/content/coral/location-villa.svg') 0 50% no-repeat
+            background-size: em(14) auto
+
+    @media screen and (max-width: 768px)
+        .ymaps-map {
+            -ms-touch-action: auto !important;
+            touch-action: auto !important;
+        }

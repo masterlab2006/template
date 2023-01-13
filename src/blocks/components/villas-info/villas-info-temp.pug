@@ -1,0 +1,23 @@
+mixin villas-info(data)
+
+    each col, index in data.cols
+        .dm-villas-info__col 
+        
+            each item, index2 in col.items
+                .dm-villas-info__item
+                    if item.img
+                        .dm-villas-info__item__img(class="dm-villas-info__item__img--"+item.img)
+
+                    if item.title
+                        .dm-villas-info__item__title
+                            if item.bold
+                                b!=item.title
+                            else
+                                !=item.title
+
+                    if item.value
+                        .dm-villas-info__item__value
+                            if item.value=='0'
+                                span.dm-villas-info__item__check &nbsp;
+                            else
+                                !=item.value

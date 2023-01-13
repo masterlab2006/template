@@ -1,0 +1,17 @@
+<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_18_9900)">
+<path d="M18.8808 9.0854V6.86116C18.2586 6.00266 16.0436 4.28564 12.1611 4.28564C9.66401 4.28564 7.92288 4.99593 6.854 5.73124" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13.0923 9.08519V8.39294C13.3358 8.22371 14.0101 7.88525 14.7591 7.88525C15.5081 7.88525 16.0607 8.22371 16.2434 8.39294V9.08519" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.70557 9.08519V8.39294C8.9491 8.22371 9.62342 7.88525 10.3724 7.88525C11.1214 7.88525 11.674 8.22371 11.8567 8.39294V9.08519" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7.78586 17.9315C7.78586 18.131 7.7066 18.3224 7.56552 18.4635C7.42443 18.6045 7.23308 18.6838 7.03356 18.6838C6.83403 18.6838 6.64268 18.6045 6.5016 18.4635C6.36051 18.3224 6.28125 18.131 6.28125 17.9315" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18.2805 17.9315C18.2805 18.131 18.2012 18.3224 18.0601 18.4635C17.9191 18.6045 17.7277 18.6838 17.5282 18.6838C17.3287 18.6838 17.1373 18.6045 16.9962 18.4635C16.8551 18.3224 16.7759 18.131 16.7759 17.9315" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.28099 10.3794H18.2804L19.4803 14.5578V17.579H5.08105V14.5578L6.28099 10.3794Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.88135 14.8081H17.6808" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7.78606 6.98792C7.40097 7.14268 6.98041 7.22785 6.53996 7.22785C4.69336 7.22785 3.1964 5.73088 3.1964 3.88429C3.1964 3.44384 3.28157 3.02328 3.43632 2.63818C2.20689 3.13226 1.33887 4.33567 1.33887 5.74182C1.33887 7.58842 2.83583 9.08538 4.68243 9.08538C6.08858 9.08538 7.29199 8.21736 7.78606 6.98792Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_18_9900">
+<rect width="20" height="20" fill="white" transform="translate(0.5)"/>
+</clipPath>
+</defs>
+</svg>

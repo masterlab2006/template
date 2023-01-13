@@ -1,0 +1,7 @@
+mixin villa(data)
+    .dm-map__villa
+        .dm-map__villa__img-wrap
+            img(src=data.img, alt=data.title).dm-map__villa__img
+        .dm-map__villa__desc
+            .dm-map__villa__title!=data.title
+            .dm-map__villa__location!=data.location

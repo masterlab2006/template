@@ -1,0 +1,11 @@
+mixin villas-list(data)
+    each item, index in data.items
+        .dm-villas-list__item
+            .dm-villas-list__img-wrap
+                img(src=item.img_lg, data-src-desk=item.img_lg, data-src-mobile=item.img_sm, alt=item.title).dm-villas-list__img
+            .dm-villas-list__title!=item.title
+            .dm-villas-list__params 
+                .dm-villas-list__param!=item.param1
+                .dm-villas-list__param!=item.param2
+            .dm-villas-list__btn-wrap
+                a(href=item.btn_link, target="_blank").dm-btn.dm-villas-list__btn Подробнее

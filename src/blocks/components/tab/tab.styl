@@ -1,0 +1,50 @@
+.dm-tabs
+    padding em(80) 0 0 0
+
+.dm-tab
+    &__headers
+        padding 0 em(20)
+        display flex
+        justify-content space-between
+        margin-bottom em(100)
+
+        @media screen and (min-width: 769px)
+            margin-bottom em(70)
+            justify-content: center
+
+    &__title
+        font-size: em(24)
+        text-align: center;
+        color: #000000;
+        border: 2px solid #000000;
+        border-radius: (8/24em);
+        margin 0 (10/24em)
+        flex 1 1 50%
+        padding (15/24em) 0.2em
+        cursor pointer
+
+        @media screen and (min-width: 769px)
+            font-size em(20)
+            max-width: (316/20em)
+            min-width: (316/20em)
+            padding (8/24em) 0.2em
+
+        &.selected
+            background: #F0AB00;
+            color #fff
+            border-color #F0AB00
+
+.dm-tab__items
+    position relative
+
+.dm-tab__body
+    width 100%
+    position absolute
+    left -1000000px
+    opacity 0
+
+.dm-tab__body.selected
+    position relative
+    left 0
+    opacity 1
+    transition: opacity 0.8s

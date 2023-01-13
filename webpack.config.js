@@ -3,7 +3,8 @@ const webpack = require("webpack");
 
 module.exports = {
     entry: {
-        main: "./src/js/index.js",
+        main_coral: "./src/js/index_coral.js",
+        main_sunmar: "./src/js/index_sunmar.js",
     },
 
     output: {
@@ -44,7 +45,8 @@ module.exports = {
 
     resolve: {
         alias: {
-            "%modules%": path.resolve(__dirname, "src/blocks/modules")
+            "%modules%": path.resolve(__dirname, "src/blocks/modules"),
+            "%components%": path.resolve(__dirname, "src/blocks/components")
         }
     }
 };

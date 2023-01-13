@@ -1,0 +1,58 @@
+.dm-video
+
+    &__player
+        width em(600)
+        height em(340)
+        position relative
+        overflow hidden
+        border-radius em(20)
+        z-index 0
+        cursor pointer
+
+        @media screen and (min-width: 769px)
+            width em(1204)
+            height em(500)
+            margin 0 auto
+
+        &:before
+            position absolute
+            left 0
+            right 0
+            top 0
+            bottom 0
+            content ''
+            display block
+            background url(../img/content/coral/video-bg-sm.jpg) 50% 50% no-repeat
+            background-size cover
+            z-index -1
+
+            @media screen and (min-width: 769px)
+                background url(../img/content/coral/video-bg-lg.jpg) 50% 50% no-repeat
+                background-size cover
+
+        iframe
+            width em(600)
+            height em(340)
+            transition all 0.5s
+            border-radius em(20)
+            opacity 0.0001
+            position relative
+            z-index 10
+            cursor pointer
+
+            @media screen and (min-width: 769px)
+                width em(1200)
+                height em(680)
+
+        &.playback
+
+            @media screen and (min-width: 769px)
+                height em(680)
+                transition all 0.5s
+            iframe
+                opacity 1
+
+    &__wrap
+        margin 0 em(60) em(80)
+        
+    

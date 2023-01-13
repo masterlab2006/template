@@ -1,13 +1,20 @@
 extends layouts/default
 
 block variables
-	- const title = "gulp-pug-starter"
+	- const title = "Страницы"
 
 block content
-	include ../blocks/modules/intro/intro
+	
+	ul(style="width: 600px; min-height: 600px; display: flex; flex-direction: column; margin: auto; font-size: 30px; list-style: none; justify-content: center;")
+		//- li
+		//- 	a(href="./coral.html") Coral
+		//- li
+		//- 	a(href="./sunmar.html") Sunmar
 
-block scripts
-	script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js")
-	//- script(src="./js/vendor.js")
-	script(src="./js/main.js")
-	script(src="https://static.faberlic.com/start_14_20/js/sharescript.js")
+		li
+			a(href="./coral.html")
+				img(src="https://cdn.coral.ru/content/corallogo-41fb4cf7.svg", alt="")
+
+		li
+			a(href="./sunmar.html")
+				img(src="https://cdn.sunmar.ru/content/sunmarlogo-075299b5.svg", alt="")

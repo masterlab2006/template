@@ -1,0 +1,30 @@
+body
+    .subpage-search-bg
+        .searchtabsmain
+            position absolute
+            left 0
+            top 0
+            width 100%
+
+        >.background
+            background none
+            // min-height em(980) 61.25em
+            min-height calc(61.25em+44px)
+            box-sizing: content-box
+            position static
+            background-image url(../img/content/coral/intro3-sm.jpg)
+            background-repeat no-repeat
+            background-position 0 100%
+            background-size contain
+            background-color #0093d0
+            font-size ( 100vw / 45 )
+
+            @media screen and (min-width: 769px)
+                background-image url(../img/content/coral/intro3-lg.jpg)
+                min-height em(740)
+                font-size ( 100vw / 120 )
+                background-size cover
+                background-color transparent
+
+            &:before
+                display none

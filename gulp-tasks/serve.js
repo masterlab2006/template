@@ -19,4 +19,6 @@ gulp.task("serve", () => {
     gulp.watch(paths.webp.watch, gulp.parallel("webp"));
     gulp.watch(paths.fonts.watch, gulp.parallel("fonts"));
     gulp.watch(paths.video.watch, gulp.parallel("video"));
+    gulp.watch(paths.inline.watch, gulp.parallel("inline_coral"));
+    gulp.watch(paths.inline.watch, gulp.parallel("inline_sunmar"));
 });

@@ -1,0 +1,139 @@
+// стили компонентов для проекта Sunmar
+@import "btn/btn-sunmar"
+@import "share/share-sunmar"
+
+body
+    .subpage-search-bg>.background:before
+        background none
+    
+    .bcrumb
+        display none!important
+
+.dm-banner
+    margin-bottom em(80)
+
+    @media screen and (min-width: 769px)
+        padding 0
+        max-width 1370px
+        margin em(30) auto em(80)
+
+    &__img
+        display block
+        max-width 100%
+
+.dm-banner2
+    padding 0 em(52)
+    margin-bottom em(40)
+
+    @media screen and (min-width: 769px)
+        padding 0
+        max-width 1336px
+        margin 0 auto em(80)
+
+    &__link
+        display block
+
+        & + &
+            margin-top em(48)
+
+    &__img
+        display block
+        max-width 100%
+        height auto
+        border-radius em(40)
+
+.dm-list
+    padding 0 em(30)
+    margin-bottom em(60)
+
+    @media screen and (min-width: 769px)
+        max-width 1300px
+        margin 0 auto em(60)
+        padding 0
+
+    &__title
+        font-size em(40)
+        line-height (48/40em)
+        text-align center
+        color #000
+        margin-bottom (60/40em)
+        font-weight bold
+
+        &--2
+            @media screen and (min-width: 769px)
+                min-width (480/40em)
+                width (480/40em)
+                max-width (480/40em)
+                text-align left
+
+    &__items
+        @media screen and (min-width: 769px)
+            display flex
+            justify-content space-between
+
+        &--2
+            @media screen and (min-width: 769px)
+                width em(470)
+                min-width em(470)
+                max-width em(470)
+
+    &__inner
+        @media screen and (min-width: 769px)
+            max-width em(640)
+
+    &__item
+        position relative
+        font-weight 500
+        font-size em(24)
+        line-height (29/24em)
+        padding 0 0 0 (38/24em)
+        margin-bottom 1em
+        color #000
+
+        @media screen and (min-width: 769px)
+            font-size em(20)
+            line-height (29/20em)
+            padding 0 0 0 (38/20em)
+            margin-bottom (24/20em)
+
+        &:before
+            content ''
+            position absolute
+            background-color #000
+            border-radius 50%
+            left (14/24em)
+            top (10/24em)
+            width (6/24em)
+            height (6/24em)
+            
+            @media screen and (min-width: 769px)
+                left (14/20em)
+                top (10/20em)
+                width (6/20em)
+                height (6/20em)
+
+    &--2
+        @media screen and (min-width: 769px)
+            display flex
+            justify-content space-between
+            max-width 1100px
+            margin-left auto
+            margin-right auto
+
+.dm-list__btn-wrap
+    text-align center
+    margin-bottom em(60)
+
+.dm-list__btn
+    font-size em(20)!important
+    line-height (24/20em)!important
+    min-width (256/20em)
+    min-height (50/20em)
+
+    @media screen and (min-width: 769px)
+        display none!important
+
+body
+    .destinationDetailLayout-BaseContainer
+        h1
+            display none !important

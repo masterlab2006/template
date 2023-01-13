@@ -1,0 +1,51 @@
+.dm-social-2
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+
+    &--bottom
+        margin-left auto
+        margin-right auto
+        padding-bottom 1em
+
+    &-wrap
+        padding em(60) em(46) em(80)
+
+        // @media screen and (min-width: 769px)
+
+    &__item
+        margin em(16)
+
+    &__link
+        transform scale(1)
+        transition: all 0.3s;
+        height em(80)
+        width em(80)
+        background-repeat no-repeat
+        background-position 50% 50%
+        background-size contain
+        display block
+
+        &--wa
+            background-image embedurl('../img/content/coral/wa-icon.svg')
+            background-size contain
+        &--vk
+            background-image embedurl('../img/content/coral/vk-icon.svg')
+            background-size contain
+        &--tg
+            background-image embedurl('../img/content/coral/tg-icon.svg')
+            background-size contain
+        &--chat
+            background-image embedurl('../img/content/coral/chat-icon.svg')
+            background-size contain
+
+        &:hover
+            transform scale(1.2)
+
+    &__title
+        font-size: em(42);
+        line-height: (50/42em);
+        text-align: center;
+        font-weight: 500;
+        color: #000;
+        margin-bottom (60/50em)

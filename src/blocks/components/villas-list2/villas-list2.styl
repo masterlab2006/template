@@ -1,0 +1,103 @@
+.dm-villas-list2
+    margin-bottom em(60)
+
+    @media screen and (min-width: 769px)
+        // 
+
+    &__inner
+        @media screen and (min-width: 769px)
+            max-width: em(1336)
+            width: em(1336)
+            min-width: em(1336)
+            margin 0 auto 2em
+            display flex
+            justify-content: space-between
+            align-content: flex-start
+    
+    &__header
+        font-size: em(36)
+        text-align: center;
+        color: #000000;
+        margin-bottom (40/36em)
+
+    &__slider
+
+        &-wrap
+            margin-bottom em(24)
+
+            @media screen and (min-width: 769px)
+                width em(1106)
+                max-width em(1106)
+                min-width em(1106)
+                margin-bottom 0
+        
+        &__img
+            display block
+            height em(577)
+            width 100%
+            object-fit: cover
+            object-position: center center
+            cursor grab
+
+    &__slider2
+
+        @media screen and (min-width: 769px)
+            height em(600)
+            width em(202)
+
+        &-wrap
+            margin 0 em(12) 2em
+
+            @media screen and (min-width: 769px)
+                margin 0
+                height em(577)
+                display block
+                max-height em(577)
+                width em(202)
+                min-width em(202)
+                max-width em(202)
+                overflow hidden
+        
+        &__img
+            display block
+            height em(126)
+            width em(150)
+            margin 0 em(12)
+            object-fit: cover
+            object-position: center center
+            cursor pointer
+
+            @media screen and (min-width: 769px)
+                width em(202)
+                height em(126)
+                margin 0 0 em(24)
+                // height auto
+
+        .swiper-slide
+            // height em(150)!important
+
+    &__params
+        margin 0 em(30)
+        display flex
+        justify-content: space-between
+
+        @media screen and (min-width: 769px)
+            width em(840)
+            min-width em(840)
+            max-width em(840)
+            margin 0 auto
+
+    &__param
+
+        &__title
+            font-weight: 500;
+            font-size: em(56)
+            line-height: (64/56em)
+            text-align: center;
+            color: #000000;
+
+        &__value
+            font-weight: 300;
+            font-size: em(24)
+            color: #000000;
+            text-align center

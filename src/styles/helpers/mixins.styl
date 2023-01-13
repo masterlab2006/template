@@ -1,15 +1,15 @@
 size()
-	if length(arguments) == 1
-		width: arguments[0]
-		height: arguments[0]
-	else
-		width: arguments[0]
-		height: arguments[1]
+    if length(arguments) == 1
+        width: arguments[0]
+        height: arguments[0]
+    else
+        width: arguments[0]
+        height: arguments[1]
 
 focus(color)
 	border-color color
 	box-shadow 0 0 3px 1px rgba(color, 0.45)
-	outline none
+    outline none
 
 // Миксин подключения шрифтов
 font-face(family, file-name, base-path = "../fonts", weight = false, style = false, formats = eot woff2 woff truetype svg, svg-font-name = false)
@@ -31,4 +31,4 @@ font-face(family, file-name, base-path = "../fonts", weight = false, style = fal
 			push(fonts, 'url("' +(base-path+file-name+".woff") + '") format("woff")')
 
 		src:
-			unquote(join(", ", fonts))
+            unquote(join(", ", fonts))
